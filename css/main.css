@@ -73,6 +73,23 @@
     margin-left: auto;
 }
 
+.hidden {
+    display: none;
+}
+
+/* COMPONENTS*/
+
+.floating-btn {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+.floating-btn img {
+    width: 80px;
+    height: 80px;
+}
+
 
 /* TOP NAVBAR */
 .page-navbar {
@@ -115,8 +132,9 @@
 }
 
 #lang-btn {
-display: flex;
+    display: flex;
 }
+
 #lang-btn span {
     display: inline-flex;
     padding: 0 5px;
@@ -433,25 +451,26 @@ display: flex;
 }
 
 
-@media (max-width: 1000px) { 
+
+
+@media (max-width: 1000px) {
     .about-content {
         margin-top: 10px;
         text-align: center;
     }
-    .about-content  >  div {
+
+    .about-content > div {
         text-align: center;
-    } 
-    .about-content  .primary-title:after {
+    }
+
+    .about-content .primary-title:after {
         left: calc(50% - 50px)
     }
+
     .about-content > p {
         margin-left: auto;
         margin-right: auto;
 
-    }
-
-    #lang-btn {
-        display: none;
     }
 
 }
